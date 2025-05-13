@@ -13,3 +13,7 @@
 <br><br>
 Setelah _run_ Subscriber dan Publisher, Publisher akan _publish_ 5 event/pesan ke _broker_ dan melalui _broker_ yang sama, Subscriber memproses kelima event tersebut.<br><br>
 ![Events](SentEvents.png)
+<br><br>
+![Graph](SpikeGraph.png)
+<br><br>
+Bisa dilihat bahwa lonjakan pada grafik RabbitMQ menunjukkan kecepatan pesan yang mengukur jumlah pesan yang dikirim pada _channel_ dalam interval waktu tertentu. _Spike_ pada grafik merupakan hasil dari Publisher yang telah mengirim beberapa pesan ke _broker_ melalui `cargo run`.
