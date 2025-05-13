@@ -10,3 +10,6 @@
     URL yang sama antara Subscriber dan Publisher menunjukkan bahwa keduanya terhubung ke _broker_ yang sama. Jadi, pesan yang di-_publish_ oleh Publisher akan dikirim ke _broker_ dan Subscriber dapat menerima pesan tersebut dari _broker_ yang sama.<br><br>
 
 ![RabbitMQ](RabbitMQ.png)
+<br><br>
+Setelah _run_ Subscriber dan Publisher, Publisher akan _publish_ 5 event/pesan ke _broker_ dan melalui _broker_ yang sama, Subscriber memproses kelima event tersebut.<br><br>
+![Events](SentEvents.png)
